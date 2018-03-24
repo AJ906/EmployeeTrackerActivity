@@ -10,6 +10,7 @@
     <!--<link rel="stylesheet" href="assets/CSS/style.css">-->
     <!-- Added link to the jQuery Library -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
     <style>
 
 
@@ -66,10 +67,10 @@
                     <b>
                     <th>Employee Name</th>
                     <th>Role</th>
-                    <th>Start Date</th>
-                    <th>Months Worked</th>
+                    <th>Email</th>
+                   <!--<th>Months Worked</th>
                     <th>Monthly Rate ($)</th>
-                    <th>Total Billed ($)</th>
+                    <th>Total Billed ($)</th>-->
                     </b>
                 </tr>
             </thead>
@@ -95,20 +96,20 @@
                     <form>
                         <div class="form-group">
                             <label for="employee-name">Employee Name</label>
-                            <input class="form-control" id="employee-name" type="text">
+                            <input class="form-control" id="name-input" type="text">
                         </div>
                         <div class="form-group">
                             <label for="employee-role">Role</label>
-                            <input class="form-control" id="employee-role" type="text">
+                            <input class="form-control" id="role-input" type="text">
                         </div>
                         <div class="form-group">
-                            <label for="start-date">Start Date (DD-MM-YY - ex: 01/01/89)</label>
-                            <input class="form-control" id="start-date" type="text">
+                            <label for="email">email</label>
+                            <input class="form-control" id="email-input" type="text">
                         </div>
-                        <div class="form-group">
+                       <!-- <div class="form-group">
                             <label for="monthly-rate">Monthly Rate</label>
                             <input class="form-control" id="monthly-rate" type="text">
-                        </div>
+                        </div> -->
                         <button class="btn btn-primary" id="submit-bid" type="submit">Submit</button>
                     </form>
                 </div>
@@ -122,6 +123,7 @@
 
 </div>
 
-
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="logic.js"></script>
 </body>
 </html>
